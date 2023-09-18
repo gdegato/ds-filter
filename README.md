@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# Desafio DS Filter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto foi desenvolvido durante o Curso ReactJS Professional
 
-Currently, two official plugins are available:
+## ✔️ Conhecimentos contemplados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `Comunicação entre componentes React.`
+- `Comunicação de componentes por meio de eventos`
+- `Estado global com Context API`
 
-## Expanding the ESLint configuration
+## ✔️ Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- `React`
+- `React Hooks`
+- `ContextAPI`
+- `React-Routes`
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Abrir e rodar o projeto
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Para abrir e rodar o projeto, execute `yarn` para instalar as dependências e `yarn dev` para iniciar o projeto.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Depois, acesse <a href="http://127.0.0.1:5173">http://127.0.0.1:5173</a> no seu navegador.
