@@ -1,0 +1,5 @@
+.listing-master{
+    border-radius: 6px;
+    background-color: var(--ct-color-bg-primary);
+    padding: 20px;
+}
