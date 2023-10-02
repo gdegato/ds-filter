@@ -6,6 +6,7 @@ export default function Header() {
 
     const { contextCartCount } = useContext(ContextCartCount)
 
+
     return (
         <header className="container-header" >
             <nav className="container">

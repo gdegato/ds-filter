@@ -2,10 +2,15 @@ import { useState } from "react"
 import Header from "./components/Header"
 import ListingBody from "./components/ListingBody"
 import { ContextCartCount } from "./utils/context-cart"
+import { ProductDTO } from "./models/product";
+import * as productService from './services/product-service'
+
 
 function App() {
 
-  const [contextCartCount, setContextCartCount] = useState<number>(0)
+  const [productsList] = useState<ProductDTO[]>(productService.products);
+
+  const [contextCartCount, setContextCartCount] = useState<number>(productsList.length)
   
   return (
     <>

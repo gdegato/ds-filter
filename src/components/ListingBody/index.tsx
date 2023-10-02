@@ -8,6 +8,7 @@ import { ContextCartCount } from '../../utils/context-cart';
 
 export default function ListingBody() {
 
+   
     const { contextCartCount, setContextCartCount } = useContext(ContextCartCount)
 
     const [productsList, setProductsList] = useState<ProductDTO[]>(productService.products);
@@ -20,9 +21,7 @@ export default function ListingBody() {
     }
 
     useEffect(() => {
-
-        setContextCartCount(contextCartCount)
-        console.log(setContextCartCount(contextCartCount), 'aqui')
+        setContextCartCount(contextCartCount)        
     }, [productsList])
 
     return (

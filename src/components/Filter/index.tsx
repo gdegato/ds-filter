@@ -17,9 +17,9 @@ export default function Filter({ onSearch }: Props) {
 
     const [formData, setFormData] = useState<FilterData>({
         priceLo: 0,
-        priceHi: 0
+        priceHi: Number.MAX_VALUE
+
     })
-    console.log('priceHi', formData.priceHi)
 
     function handleChange(event: any) {
         const value = event.target.value;
@@ -46,11 +46,10 @@ export default function Filter({ onSearch }: Props) {
                     className='mb20'
                 />
                 <input
-                    value={formData.priceHi || ''}
+                    name="priceHi"
+                    value={formData.priceHi || '' }
                     placeholder="Preço máximo"
                     type="text"
-                    name="priceHi"
-                    max={formData.priceHi}
                     onChange={handleChange}
                     className='mb20'
                 />
